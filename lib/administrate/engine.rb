@@ -24,8 +24,6 @@ module Administrate
     @@javascripts = []
     @@stylesheets = []
 
-    Engine.config.assets.precompile << /\.(?:svg)\z/
-
     def self.add_javascript(script)
       @@javascripts << script
     end
